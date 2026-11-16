@@ -7,12 +7,12 @@ COMPANY_NAME = "Tesla Inc"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-STOCK_API_KEY = "PKPK9X5H4L02RIXW"
-NEWS_API_KEY = "684d433235f24793ae84f5fa9c7acbb4"
+STOCK_API_KEY = "TU_CLAVE_AQUI"
+NEWS_API_KEY = "TU_CLAVE_AQUI"
 
-TWILIO_SID = "ACefadaa80327dd9be51282ece211d2027"
-TWILIO_AUTH_TOKEN = "d4851a9f8ee6a05b429b71951e2bc9f8"
-sender = "+19707174283"
+TWILIO_SID = "TU_CLAVE_AQUI"
+TWILIO_AUTH_TOKEN = "TU_CLAVE_AQUI"
+sender = "+0000000000"
 
 parameters = {
     "function": "TIME_SERIES_DAILY",
@@ -54,7 +54,7 @@ if abs(porcentage) > 0:
         message = client.messages.create(
             body=article,
             from_=sender,
-            to="+541154077378",
+            to="+0000000000",
         )
 
 #Optional TODO: Format the message like this: 

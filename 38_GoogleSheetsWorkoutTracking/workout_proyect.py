@@ -2,12 +2,12 @@ import requests
 from datetime import datetime
 
 GENDER = "male"
-WEIGHT_KG = "110"
-HEIGHT_CM = "175"
-AGE = "34"
+WEIGHT_KG = "70"
+HEIGHT_CM = "170"
+AGE = "30"
 
-APP_ID = "87224c01"
-API_KEY = "ae3b76e476b0a3f0b3830188b473b1da"
+APP_ID = "TU_CLAVE_AQUI"
+API_KEY = "TU_CLAVE_AQUI"
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_endpoint = "https://api.sheety.co/nicolassturla/WorkoutProyect/workout"
@@ -30,7 +30,7 @@ parameters = {
 response = requests.post(exercise_endpoint, json=parameters, headers=headers)
 result = response.json()
 
-today_date = datetime.now().strftime("%d/&m/%Y")
+today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
 
 for exercise in result["exercises"]:
